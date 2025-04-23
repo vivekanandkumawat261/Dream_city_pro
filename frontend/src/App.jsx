@@ -3,34 +3,34 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
+
 function App() {
   const [jokes, setJokes] = useState([])
-
+  
   useEffect(() => {
     axios.get('/api/jokes')
     .then((response) => {
-       setJokes(response.data)
+      setJokes(response.data)
     })
     .catch((error) => {
-        console.log(error)
+      console.log(error)
     })
   })
 
   return (
     <>
-       
-       <h1>Hello from App.jsx</h1>
-       <p>JOKES: {jokes.length}</p>
+      <h1>Chai and full stack</h1>
+      <p>JOKES: {jokes.length}</p>
 
-       {
-          jokes.map((joke, index) => (
-               <div key={joke.id}>
-                     <h1>{joke.title}</h1>
-                     <p>{joke.content}</p>
-               </div>
-          ))
-       }
-      
+      {
+        jokes.map((joke, index) => (
+             <div key={joke.cityId}>
+                  <h2>{joke.cityId}</h2>
+                  <h3>{joke.name}</h3>
+                  <p>{joke.region}</p>
+             </div>
+        ))
+      }
     </>
   )
 }
