@@ -1,3 +1,6 @@
+# sever at https://dream-city-pro-2.onrender.com  
+# for frontend at 
+
 🔑 Step-by-Step Plan Based on Your Skills
 ✅ Step 1: Polish What You Already Know
 Before learning new stuff, make sure you’re solid with:
