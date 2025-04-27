@@ -1,0 +1,1 @@
+export const DB_NAME = "dream_city_pro"
